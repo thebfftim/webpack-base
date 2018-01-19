@@ -1,0 +1,41 @@
+// ----SCSS style variables-----
+$light-blue: #88bbdd;
+$red: #ff6666;
+$yellow: #ffcc66;
+$pink: #ee88dd;
+
+
+$iso-light: 'IsotextPro-Light';
+$iso-litalic: 'IsoextPro-Light-Italic';
+$iso-reg: 'IsotextPro-Regula';
+$iso-italic: 'IstextPro-Italic';
+$iso-bold: 'IsotextPro-Bold';
+
+$eaves: 'mrs-eaves';
+$leitura: 'leitura-ne';
+$ultmag-reg: 'Ultramagnetic-Regular';
+$ultmag-light: 'Ultramagnec-Light';
+
+//
+
+//
+
+// html styles
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+	margin: 0;
+	padding: 1;
+}
+
+html
+{
+	box-sizing: border-box;
+	background: url('/content/doge.jpg');
+}
+
+h1
+{
+	font-family: 'GT America';
+}

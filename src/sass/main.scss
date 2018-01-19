@@ -1,0 +1,94 @@
+// ----SCSS style variables-----
+
+//
+
+
+// -----SCSS partial stylesheets-----
+
+@import 'import', 'mixin';
+
+//
+
+// -----SCSS consistent styles to be extended-----
+
+.flex-horizontally-centred
+{
+	@include vendor-prefixes-property(display, flex);
+	@include vendor-prefixes(flex-direction, row);
+	@include vendor-prefixes(align-items, center);
+}
+
+.flex-horizontally-top
+{
+	@include vendor-prefixes-property(display, flex);
+	@include vendor-prefixes(flex-direction, row);
+	@include vendor-prefixes(align-items, flex-start);
+}
+
+.flex-horizontally-bottom
+{
+	@include vendor-prefixes-property(display, flex);
+	@include vendor-prefixes(flex-direction, row);
+	@include vendor-prefixes(align-items, flex-end);
+}
+
+.flex-vertically-centred
+{
+	@include vendor-prefixes-property(display, flex);
+	@include vendor-prefixes(flex-direction, column);
+	@include vendor-prefixes(align-items, center);
+	@include vendor-prefixes(justify-content, center);
+}
+
+//
+
+// html styles
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	box-sizing: border-box;
+
+	@media only screen and (max-width: 440px)
+	{
+		font-size: 1.4vw;
+	}
+
+	@media only screen and (min-width: 441px) and (max-width: 768px)
+	{
+		font-size: 1.2vw;
+	}
+
+	@media only screen and (min-width: 769px) and (max-width: 1024px)
+	{
+		font-size: 0.8vw;
+	}
+
+	@media only screen and (min-width: 1025px)
+	{
+		font-size: 0.6944vw;
+	}
+
+	@media only screen and (min-width: 1680px)
+	{
+		font-size: 0.5vw;
+	}
+
+	@media only screen and (min-width: 1920px)
+	{
+		font-size: 0.4vw;
+	}
+}
+
+body
+{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+}
